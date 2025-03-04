@@ -1,0 +1,10 @@
+Install zerotier one
+
+sudo sh -c 'echo "deb http://download.zerotier.com/debian/jessie jessie main #ZeroTier" > /etc/apt/sources.list.d/zerotier.list'
+wget -O - 'https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg' | sudo apt-key add -
+sudo apt update
+sudo ap apt install zerotier-one
+systemctl restart zerotier-one
+zerotier-cli listnetworks
+zerotier-cli join [id zeroties]
+python3 -m http.server 8080
