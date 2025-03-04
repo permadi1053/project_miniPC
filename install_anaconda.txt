@@ -1,0 +1,6 @@
+download anaconda : https://repo.anaconda.com/archive/
+cd Donwlods
+chmod 777 anaconda3-...-...sh  
+bash  anaconda3-...-...sh  
+yes to all question
+source ~/.bashrc
